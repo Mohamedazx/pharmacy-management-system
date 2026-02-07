@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD73FBE4-F515-4164-AE64-CABAE00A4A30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pharmacy</RootNamespace>
+    <AssemblyName>pharmacy</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\الصيدليه\pharmacy\app.publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>ar-EG</TargetCulture>
+    <PublisherName>mohamed hosny</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>6.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A31DE7B9C4CCC24A996176326EA655C59E7E46CF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>pharmacy_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>medicine.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\New folder\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DXL\DXL.cs" />
+    <Compile Include="forms\allbills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\allbills.Designer.cs">
+      <DependentUpon>allbills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\all_salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\all_salary.Designer.cs">
+      <DependentUpon>all_salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\billing_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\billing_form.Designer.cs">
+      <DependentUpon>billing_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\comingform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\comingform.Designer.cs">
+      <DependentUpon>comingform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\customers.Designer.cs">
+      <DependentUpon>customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\employes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\employes.Designer.cs">
+      <DependentUpon>employes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\expebills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\expebills.Designer.cs">
+      <DependentUpon>expebills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\expenses.Designer.cs">
+      <DependentUpon>expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\homeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\homeform.Designer.cs">
+      <DependentUpon>homeform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\medicine_manufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\medicine_manufacturer.Designer.cs">
+      <DependentUpon>medicine_manufacturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\medicinform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\medicinform.Designer.cs">
+      <DependentUpon>medicinform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\profit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\profit.Designer.cs">
+      <DependentUpon>profit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\serch_outs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\serch_outs.Designer.cs">
+      <DependentUpon>serch_outs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\show_billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\show_billing.Designer.cs">
+      <DependentUpon>show_billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\start.Designer.cs">
+      <DependentUpon>start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\usersgo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\usersgo.Designer.cs">
+      <DependentUpon>usersgo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\user_com.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\user_com.Designer.cs">
+      <DependentUpon>user_com.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\all_profit.cs" />
+    <Compile Include="PL\billingcs.cs" />
+    <Compile Include="PL\costmers.cs" />
+    <Compile Include="PL\employeess.cs" />
+    <Compile Include="PL\expbills.cs" />
+    <Compile Include="PL\med.cs" />
+    <Compile Include="PL\medcin_munfer.cs" />
+    <Compile Include="PL\salarys.cs" />
+    <Compile Include="PL\total_time.cs" />
+    <Compile Include="PL\userspl.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\allbills.resx">
+      <DependentUpon>allbills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\all_salary.resx">
+      <DependentUpon>all_salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\billing_form.resx">
+      <DependentUpon>billing_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\comingform.resx">
+      <DependentUpon>comingform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\customers.resx">
+      <DependentUpon>customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\employes.resx">
+      <DependentUpon>employes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\expebills.resx">
+      <DependentUpon>expebills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\expenses.resx">
+      <DependentUpon>expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\homeform.resx">
+      <DependentUpon>homeform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\medicine_manufacturer.resx">
+      <DependentUpon>medicine_manufacturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\medicinform.resx">
+      <DependentUpon>medicinform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\profit.resx">
+      <DependentUpon>profit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\serch_outs.resx">
+      <DependentUpon>serch_outs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\show_billing.resx">
+      <DependentUpon>show_billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\start.resx">
+      <DependentUpon>start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\usersgo.resx">
+      <DependentUpon>usersgo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\user_com.resx">
+      <DependentUpon>user_com.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img - Copy\bill %281%29.png" />
+    <Content Include="img - Copy\bill.png" />
+    <Content Include="img - Copy\building.png" />
+    <Content Include="img - Copy\medicine.png" />
+    <Content Include="img - Copy\receipt.png" />
+    <Content Include="img - Copy\teamwork.png" />
+    <Content Include="img - Copy\time-is-money.png" />
+    <Content Include="img - Copy\Untitled-1.jpg" />
+    <Content Include="img\.png" />
+    <Content Include="img\aesthetic-dark-wallpaper-background-neon-light.jpg" />
+    <Content Include="img\bill %281%29.png" />
+    <Content Include="img\bill.png" />
+    <Content Include="img\building.png" />
+    <Content Include="img\delete.png" />
+    <Content Include="img\error.png" />
+    <Content Include="img\expenses.png" />
+    <Content Include="img\hold-the-door.png" />
+    <Content Include="img\home.png" />
+    <Content Include="img\invoice.png" />
+    <Content Include="img\knock.png" />
+    <Content Include="img\login.png" />
+    <Content Include="img\medicine.png" />
+    <Content Include="img\profits.png" />
+    <Content Include="img\receipt.png" />
+    <Content Include="img\salary.png" />
+    <Content Include="img\teamwork.png" />
+    <Content Include="img\time-is-money.png" />
+    <Content Include="img\Untitled-1.jpg" />
+    <Content Include="img\Untitled-1.png" />
+    <Content Include="medicine.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
